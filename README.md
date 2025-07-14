@@ -6,5 +6,4 @@ Built with Flask, HTML, CSS, JavaScript, Bootstrap, and SQL.
 
 ## Features
 - Sign Up / Login (Google style UI)
-- Landing Page with Typewriter Effect
 - Civic Issue Feed (Coming soon)
