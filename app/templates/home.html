@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block title %}Login / Signup - Awaaz{% endblock %}
+
+{% block content %}
+<div class="homepage-bg d-flex align-items-center justify-content-between px-5" style="height: 100vh;">
+
+   <!-- Left side: Logo + Tagline -->
+<!-- Left side: Logo + Tagline -->
+<div class="text-white w-50 d-flex flex-column justify-content-center ps-5 pe-4" style="margin-left: 90px;">
+    
+    <!-- Bubbly typing AWAAZ -->
+    <h1 class="display-1 fw-bold mb-3 typing-title" style="color: #f5f5dc;">AWAAZ</h1>
+
+    <p class="fs-3 fw-semibold mb-2">Raise your voice. Spark change.</p>
+    
+   <p class="fs-5 mb-3 typewriter" style="max-width: 500px;">
+    Awaaz empowers citizens to report civic problems — overflowing garbage, broken roads, open manholes, and more — with just a photo and a few words. Be heard. Be the change.
+</p>
+
+
+    <p class="fs-6 fst-italic" style="color: #f5f5dc;">
+    "The smallest voice can ignite the biggest impact."
+</p>
+<div class="mt-4 ms-3">
+    <a href="https://instagram.com" target="_blank" class="me-3 text-decoration-none social-icon">
+        <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="me-3 text-decoration-none social-icon">
+        <i class="bi bi-twitter"></i>
+    </a>
+    <a href="https://facebook.com" target="_blank" class="text-decoration-none social-icon">
+        <i class="bi bi-facebook"></i>
+    </a>
+</div>
+
+
+</div>
+
+
+
+    <!-- Right side: Login Form -->
+    <div class="form-container" >
+        <div class="card p-4 shadow-lg" style="min-width: 380px;" style="color: #f5f5dc;">
+            <h3 class="text-center mb-3">Be the Change!</h3>
+<p class="text-center text-muted mb-4 fs-6">Log in to report a civic issue or track your voice.</p>
+
+            <form> 
+                <div class="mb-3">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+                <div class="text-center mt-3">
+                    <small>Don't have an account? <a href="{{ url_for('main.signup') }}">Sign up</a></small>
+
+                </div>
+                <hr>
+                <button class="btn btn-outline-danger w-100 mt-2">
+                    <img src="{{ url_for('static', filename='images/google-icon.png') }}" width="20" class="me-2">
+                    Login with Google
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
