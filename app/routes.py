@@ -20,3 +20,7 @@ def dashboard():
 def logout():
     session.clear()  # Optional: clear session/login data
     return redirect(url_for('main.home'))  # Redirects to "/"
+
+@main.route('/report', methods=['GET', 'POST'])
+def report():
+    return render_template('report.html')
